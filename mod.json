@@ -1,0 +1,12 @@
+{
+    "Name": "GunMaster preset manager",
+    "Description": "cooked and ready to test",
+    "Version": "1.0.0",
+    "Reason": "live test version",
+    "Authors": [ "iamadeadpixel" ],
+    "HasVeniceEXT": true,
+    "Dependencies": {
+        "veniceext": "^1.0.0"
+    },
+    "Tags": [ "gm-presets" ]
+}
