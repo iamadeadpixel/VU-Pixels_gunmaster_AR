@@ -23,6 +23,68 @@ end
 -- ---
 
 Events:Subscribe('Player:Chat', function(player, recipientMask, message)
+	if message == ".gm reboot" then
+
+
+	if Config.serverowner ~= player.name then
+		ChatManager:SendMessage("You dont have permissions " .. player.name, player)
+				print("*** You dont have permissions "..player.name)
+
+    elseif Config.serverowner == player.name then
+
+      ChatManager:SendMessage("rebooting the server", player)
+	print("**  Rebooting the server **");
+	RCON:SendCommand('admin.shutDown')
+
+end
+end
+end)
+
+-- ---
+
+Events:Subscribe('Player:Chat', function(player, recipientMask, message)
+	if message == ".gm reload" then
+
+
+	if Config.serverowner ~= player.name then
+		ChatManager:SendMessage("You dont have permissions " .. player.name, player)
+				print("*** You dont have permissions "..player.name)
+
+    elseif Config.serverowner == player.name then
+
+      ChatManager:SendMessage("Reloading the current map", player)
+	print("**  Reloading the current map **");
+	RCON:SendCommand('maplist.restartRound')
+
+end
+end
+end)
+
+-- ---
+Events:Subscribe('Player:Chat', function(player, recipientMask, message)
+	if message == ".gm nextmap" then
+
+
+	if Config.serverowner ~= player.name then
+		ChatManager:SendMessage("You dont have permissions " .. player.name, player)
+				print("*** You dont have permissions "..player.name)
+
+    elseif Config.serverowner == player.name then
+
+      ChatManager:SendMessage("forwarding to the next map", player)
+	print("**  Forwarding to the next map **");
+	RCON:SendCommand('mapList.runNextRound')
+
+end
+end
+end)
+
+-- ---
+
+
+-- ---
+
+Events:Subscribe('Player:Chat', function(player, recipientMask, message)
 	if message == ".gm status" then
 
 

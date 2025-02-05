@@ -1,8 +1,8 @@
 {
     "Name": "GunMaster preset manager",
-    "Description": "cooked and ready to test",
+    "Description": "forwards to the next gun master weapon preset",
     "Version": "1.0.0",
-    "Reason": "live test version",
+    "Reason": "minor fix",
     "Authors": [ "iamadeadpixel" ],
     "HasVeniceEXT": true,
     "Dependencies": {
